@@ -1,0 +1,102 @@
+@import 'utilities.css';
+
+:root {
+    --colorPrimary: #073B6C;
+    --colorPrimaryDark: #062849;
+    --colorSecondary: #03DAC5;
+    --pureWhite: #ffffff;
+    --pureBlack: #000000;
+    --lightgray: #C1C0C0;
+    --puregray: #8c8c8c;
+    --pureRed: #CC0000;
+    --normalRed: #fa7074;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    /* background: var(--colorPrimary); */
+}
+
+header {
+    background: var(--colorPrimaryDark);
+}
+
+.container {
+    max-width: 1151px;
+    padding: 5px 15px;
+}
+
+.brand-logo {
+    width: 200px;
+    height: auto;
+    margin-right: 5rem;
+}
+
+header nav {
+    padding: 1rem 0;
+}
+
+header nav .left a {
+    color: var(--pureWhite);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover {
+    color: var(--colorPrimary);
+}
+
+header nav .right {
+    position: absolute;
+    right: 0;
+    margin: 2rem;
+}
+
+.container h2 {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+.container .product {
+    padding: 2rem 3rem;
+    padding-top: 0;
+}
+
+.container .product a {
+    text-decoration: none;
+    color: var(--pureBlack);
+    transition: all .3s ease;
+}
+
+.container .product a:hover{
+    color: var(--colorPrimaryDark);
+}
+
+.container .product img {
+    width: 50px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.about {
+    line-height: .5;
+    width: 100%;
+    bottom: 5px;
+    position: fixed;
+    background: var(--colorPrimary);
+}
+
+.about .content {
+    padding: 2rem;
+    color: var(--lightgray);
+}
